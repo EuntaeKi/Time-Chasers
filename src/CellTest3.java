@@ -30,7 +30,6 @@ public class CellTest3 extends JPanel {
 
     CellTest3(Digit digit) {
         this.setBorder(BorderFactory.createLineBorder(Color.black, 1));
-
         JDigit cellValue = new JDigit(digit);
         add(cellValue, BorderLayout.CENTER);
     }
@@ -38,14 +37,14 @@ public class CellTest3 extends JPanel {
 class JDigit extends JPanel {
 
     public JDigit(Digit digit) {
-        this.setPreferredSize(new Dimension(800, 800));
+        this.setPreferredSize(new Dimension(276, 500));
     }
     //Circle and Rectangle
     @Override
     protected void paintComponent(Graphics g) {
         
-    	g.drawRect(400, 400, 100, 100);
-        g.drawOval(0, 0, 800, 800);
+    	//g.drawRect(400, 400, 100, 100);
+        g.drawOval(0, 0, 50, 50);
     }
   }
 }
