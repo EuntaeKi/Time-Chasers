@@ -46,7 +46,7 @@ public class whiteBoard extends JFrame {
     }
     public static void main(String[] args) {
         new whiteBoard();
-        CircleDraw clock = new CircleDraw();
-        clock.paint();
+        /*CircleDraw clock = new CircleDraw();
+        clock.paint();*/
     }
 }
