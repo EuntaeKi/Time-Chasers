@@ -13,42 +13,9 @@ public class whiteBoard extends JFrame {
     private JButton right;
     private Dimension size;
     public whiteBoard() {
-    	ImageTutorial bg = new ImageTutorial();
-		bg.setVisible(true);
-		bg.pack();
-		
-		
-		
         gui();
     }
 
-    
-    
-    
-    
-    private ImageIcon image1;
-	private JLabel label1;
-	private ImageIcon image2;
-	private JLabel label2;
-	
-	/*
-	public void ImageTutorial(){
-		setLayout(new FlowLayout());
-		
-		image1 = new ImageIcon(getClass().getResource("Clock.png"));
-		
-		label1 = new JLabel(image1);
-		add(label1);
-		
-		image2 = new ImageIcon(getClass().getResource("Clock Without Black Rim Finalized.png"));
-		
-		label2 = new JLabel(image2);
-		add(label2);
-		
-	}
-	
-	
-    */
     public void gui(/*java.awt.Graphics g*/) {
     	/*setSize(476, 500);
 		setVisible(true);
@@ -91,64 +58,17 @@ public class whiteBoard extends JFrame {
         control.add(left);
         control.add(right);
         //Adding JPanel(control) into JFrame(frame)
-        frame.add(control);
-        
-        
-        /*g.drawOval(100, 50, 400, 400);
-        repaint();*/
-        
+        frame.add(control);    
     }
-  /*  //@Override
-	public void paint(Graphics g) {	
-		// TODO Auto-generated method stub
-		//super.paint(arg0);
-		
-		g.drawOval(100, 50, 400, 400);
-		}
-	*/
-	
-	
-	
-	
-//	whiteBoard/*CellTest3*/(Digit digit) {
- /*       this.setBorder(BorderFactory.createLineBorder(Color.black, 1));
-        JDigit cellValue = new JDigit(digit);
-        add(cellValue, BorderLayout.CENTER);
-    }
-
-class JDigit extends JPanel {
-
-    public JDigit(Digit digit) {
-        this.setPreferredSize(new Dimension(276, 500));
-    }
-    //Circle and Rectangle
-    @Override
-    protected void paintComponent(Graphics g) {
-        
-    	//g.drawRect(400, 400, 100, 100);
-        g.drawOval(0, 0, 50, 50);
-    }
-  }
-	
-	
-	
-	
-	
-	
-	
-	*/
-	
-	
+    
+    
     public static void main(String[] args) {
-    	//ImagePanel panel = new ImagePanel(new ImageIcon("img/Clock Without Black Rim Finalized.png").getImage());
         new whiteBoard();
         
-        //ImageTutorial bg = new ImageTutorial();
-		/*gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);*/
-		//bg.setVisible(true);
-		//gui.pack();
-        //ImageTutorial bg = new ImageTutorial();
-        //bg.Circle();
-        //CellTest3 circle = new CellTest3();
+        
+        //The window with the background
+        ImageTutorial bg = new ImageTutorial();
+		bg.setVisible(true);
+		bg.pack();
     }
 }
