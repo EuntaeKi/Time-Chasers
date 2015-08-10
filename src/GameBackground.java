@@ -74,8 +74,9 @@ class JDigit extends JPanel {
     }
     //Circle
     @Override
-    protected void paintComponent(Graphics g) {
+    public void paintComponent(Graphics g) {
         g.drawOval(0, 0, 50, 50);
+        //repaint();
        // g.drawImage(img, 0, 0, null);
     }
   }

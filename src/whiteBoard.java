@@ -13,11 +13,42 @@ public class whiteBoard extends JFrame {
     private JButton right;
     private Dimension size;
     public whiteBoard() {
-
+    	ImageTutorial bg = new ImageTutorial();
+		bg.setVisible(true);
+		bg.pack();
+		
+		
+		
         gui();
-        
     }
-      
+
+    
+    
+    
+    
+    private ImageIcon image1;
+	private JLabel label1;
+	private ImageIcon image2;
+	private JLabel label2;
+	
+	/*
+	public void ImageTutorial(){
+		setLayout(new FlowLayout());
+		
+		image1 = new ImageIcon(getClass().getResource("Clock.png"));
+		
+		label1 = new JLabel(image1);
+		add(label1);
+		
+		image2 = new ImageIcon(getClass().getResource("Clock Without Black Rim Finalized.png"));
+		
+		label2 = new JLabel(image2);
+		add(label2);
+		
+	}
+	
+	
+    */
     public void gui(/*java.awt.Graphics g*/) {
     	/*setSize(476, 500);
 		setVisible(true);
@@ -30,6 +61,7 @@ public class whiteBoard extends JFrame {
             frame.add(new GameBackground(d));
         }
         //frame.setSize(1000, 1000);
+        //frame.pack();
         frame.setSize(276, 500);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
@@ -38,7 +70,7 @@ public class whiteBoard extends JFrame {
         //Control panel property
         control = new JPanel();
         control.setSize(276, 500);
-        control.setBackground(Color.white);
+        //control.setBackground(Color.white);
         //Declaring Left Button
         left = new JButton("");
         //Size of JButton
@@ -108,8 +140,15 @@ class JDigit extends JPanel {
 	
 	
     public static void main(String[] args) {
-    	ImagePanel panel = new ImagePanel(new ImageIcon("img/Clock Without Black Rim Finalized.png").getImage());
+    	//ImagePanel panel = new ImagePanel(new ImageIcon("img/Clock Without Black Rim Finalized.png").getImage());
         new whiteBoard();
+        
+        //ImageTutorial bg = new ImageTutorial();
+		/*gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);*/
+		//bg.setVisible(true);
+		//gui.pack();
+        //ImageTutorial bg = new ImageTutorial();
+        //bg.Circle();
         //CellTest3 circle = new CellTest3();
     }
 }
