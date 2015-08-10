@@ -13,7 +13,7 @@ public class whiteBoard extends JFrame {
     private JButton right;
     private Dimension size;
     public whiteBoard() {
-    	
+    	//dsadadkl
     	
     	
     	/*setSize(476, 500);
