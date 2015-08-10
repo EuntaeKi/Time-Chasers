@@ -47,7 +47,7 @@ public class whiteBoard extends JFrame {
         frame = new JFrame("White Board");
         frame.setVisible(true);
         for (Digit d : Digit.digits) {
-            frame.add(new CellTest3(d));
+            frame.add(new GameBackground(d));
         }
         //frame.setSize(1000, 1000);
         frame.setSize(276, 500);
@@ -98,8 +98,8 @@ public class whiteBoard extends JFrame {
 	
 	
 	
-	whiteBoard/*CellTest3*/(Digit digit) {
-        this.setBorder(BorderFactory.createLineBorder(Color.black, 1));
+//	whiteBoard/*CellTest3*/(Digit digit) {
+ /*       this.setBorder(BorderFactory.createLineBorder(Color.black, 1));
         JDigit cellValue = new JDigit(digit);
         add(cellValue, BorderLayout.CENTER);
     }
@@ -124,10 +124,11 @@ class JDigit extends JPanel {
 	
 	
 	
-	
+	*/
 	
 	
     public static void main(String[] args) {
+    	ImagePanel panel = new ImagePanel(new ImageIcon("img/Clock Without Black Rim Finalized.png").getImage());
         new whiteBoard();
         //CellTest3 circle = new CellTest3();
     }
