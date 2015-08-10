@@ -12,27 +12,7 @@ public class whiteBoard extends JFrame {
     private JButton left;
     private JButton right;
     private Dimension size;
-    public whiteBoard() {
-    	
-    	
-    	
-    	/*setSize(476, 500);
-		setVisible(true);
-		setBackground(Color.BLUE);*/
-		
-		
-		/*
-		right = new JButton("");
-        //Size of JButton
-        right.setPreferredSize(new Dimension(125, 500));
-        //Setting them invisible
-        right.setOpaque(false);
-        right.setContentAreaFilled(false);
-        right.setBorderPainted(false);
-        frame = new JFrame("White Board");*/
-        
-        
-        
+    public whiteBoard() {     
         
         gui();
         
