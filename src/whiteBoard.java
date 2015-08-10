@@ -12,8 +12,8 @@ public class whiteBoard extends JFrame {
     private JButton left;
     private JButton right;
     private Dimension size;
-    public whiteBoard() {     
-        
+    public whiteBoard() {
+
         gui();
         
     }
