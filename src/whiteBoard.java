@@ -5,16 +5,23 @@ import java.awt.event.*;
 
 public class whiteBoard extends JFrame {
     private JFrame frame;
-    //private JPanel control;
+    private JPanel control;
     //private JPanel control2;
     //private JButton left;
     //private JButton right;
     //private Dimension size;
+    
+    
+    private ImageIcon image1;
+	private JLabel label1;
+	
+	
     private static draw object = new draw();
+    private static ImageTutorial bg = new ImageTutorial();
     private static int x, y;
     
     public whiteBoard() {
-        gui();
+        gui();       
     }
     
     public void gui() { 	
@@ -25,8 +32,9 @@ public class whiteBoard extends JFrame {
             frame.add(new GameBackground(d));
         }
         //frame.setSize(1000, 1000);
-        //frame.pack();
-        frame.setSize(276, 500);
+        frame.pack();
+        //frame.setSize(276, 500);
+        //frame.setSize(800, 800);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
         
@@ -56,9 +64,26 @@ public class whiteBoard extends JFrame {
         //control.add(right);
         //Adding JPanel(control) into JFrame(frame)
         //frame.add(control);
-        
+        //frame.add(bg);
         frame.add(object);
-    }
+        
+        
+        /*
+        setLayout(new FlowLayout());
+		
+		image1 = new ImageIcon(getClass().getResource("Clock.png"));
+		
+		label1 = new JLabel(image1);
+		//add(label1);
+        
+		control.add(label1);
+		control.setVisible(true);
+		*/
+        
+        
+		}
+		
+		
     
     
     //MouseListening stuff
@@ -76,6 +101,9 @@ public class whiteBoard extends JFrame {
         /*ImageTutorial bg = new ImageTutorial();
 		bg.setVisible(true);
 		bg.pack();*/
+        
+       // ImageTutorial img = new ImageTutorial();
+        //img.setVisible(true);
 		
 		object.addMouseListener(new AL());
     }
