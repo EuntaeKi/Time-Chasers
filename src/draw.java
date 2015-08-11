@@ -11,6 +11,19 @@ public class draw extends JPanel{
 		//repaint();
 		
 		
+		//Defining left and right of the window
+		if (x < 480){
+			System.out.println("You are in the left half of the window");
+		}
+		else{
+			System.out.println("You are in the right half of the window");
+		}
+		
+		//Defining center of the window
+		if (x == 480){
+			System.out.println("You are in the center of the window");
+		}
+		
 		//Print outs to find the coordinates of mouse pushed
 		System.out.println("Mouse has been pushed");
 		System.out.println("This is the x cord " + x);
