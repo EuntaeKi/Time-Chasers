@@ -30,5 +30,4 @@ public class ImageTutorial extends JFrame {
 		gui.setVisible(true);
 		gui.pack();
 	}
-	
 }
