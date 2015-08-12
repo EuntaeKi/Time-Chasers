@@ -88,7 +88,7 @@ public class whiteBoard extends JFrame {
     
     //MouseListening stuff
     static class AL extends MouseAdapter{
-		public void mouseClicked (MouseEvent e){
+		public void mousePressed (MouseEvent e){
 			x = e.getX();
 			y = e.getY();
 			object.drawing(x, y);

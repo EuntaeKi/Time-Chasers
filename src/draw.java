@@ -4,6 +4,7 @@ import java.awt.*;
 
 public class draw extends JPanel{
 	public static int x, y;
+	public static int mouseX_dragged;
 	
 	public void drawing(int xx, int yy){
 		x = xx;
@@ -12,7 +13,7 @@ public class draw extends JPanel{
 		
 		
 		//Defining left and right of the window
-		if (x < 480){
+		if (x < 480 /*This gives the ability to specify a ceratin area: && x > 400*/){
 			System.out.println("You are in the left half of the window");
 		}
 		else{
