@@ -13,7 +13,8 @@ public class whiteBoard extends JFrame {
     //private JButton left;
     //private JButton right;
     //private Dimension size;
-    
+//This is for Kadir
+    //asdasdas
     
     private ImageIcon image1;
 	private JLabel label1;
