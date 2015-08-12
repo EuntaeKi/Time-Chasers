@@ -1,6 +1,3 @@
-//Intelij change
-//hgjf
-
 
 import javax.swing.*;
 import java.awt.event.MouseAdapter;
@@ -13,16 +10,6 @@ public class whiteBoard extends JFrame {
     //private JButton left;
     //private JButton right;
     //private Dimension size;
-//This is for Kadir
-    //asdasdas
-
-    //TEsting part 2 from Alan
-//asdasdas testing part 3
-    //part4
-    //part5
-    //part6
-    //asdasdasd
-    //Testing intellij(Alan)
 
     private ImageIcon image1;
     private JLabel label1;
