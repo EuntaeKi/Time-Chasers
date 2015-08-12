@@ -3,9 +3,8 @@
 
 
 import javax.swing.*;
-
-import java.awt.*;
-import java.awt.event.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class whiteBoard extends JFrame {
     private JFrame frame;
@@ -16,20 +15,24 @@ public class whiteBoard extends JFrame {
     //private Dimension size;
 //This is for Kadir
     //asdasdas
-    
+
+
+    //asdasdasd
+    //Testing intellij(Alan)
+
     private ImageIcon image1;
-	private JLabel label1;
-	
-	
+    private JLabel label1;
+
+
     private static draw object = new draw();
     private static ImageTutorial bg = new ImageTutorial();
     private static int x, y;
-    
+
     public whiteBoard() {
-        gui();       
+        gui();
     }
-    
-    public void gui() { 	
+
+    public void gui() {
         //Frame property
         frame = new JFrame("White Board");
         frame.setVisible(true);
@@ -42,7 +45,7 @@ public class whiteBoard extends JFrame {
         //frame.setSize(800, 800);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
-        
+
         //frame.setLocationRelativeTo(null);
         //Control panel property
         //control = new JPanel();
@@ -84,32 +87,31 @@ public class whiteBoard extends JFrame {
 		control.add(label1);
 		control.setVisible(true);
 		*/
-        
-        
-		}
-		
-		
-    
-    
-    //MouseListening stuff
-    static class AL extends MouseAdapter{
-		public void mousePressed (MouseEvent e){
-			x = e.getX();
-			y = e.getY();
-			object.drawing(x, y);
-		}
+
+
     }
+
+
+    //MouseListening stuff
+    static class AL extends MouseAdapter {
+        public void mousePressed(MouseEvent e) {
+            x = e.getX();
+            y = e.getY();
+            object.drawing(x, y);
+        }
+    }
+
     public static void main(String[] args) {
         new whiteBoard();
-        
+
         //The window with the background
         /*ImageTutorial bg = new ImageTutorial();
-		bg.setVisible(true);
+        bg.setVisible(true);
 		bg.pack();*/
-        
-       // ImageTutorial img = new ImageTutorial();
+
+        // ImageTutorial img = new ImageTutorial();
         //img.setVisible(true);
-		
-		object.addMouseListener(new AL());
+
+        object.addMouseListener(new AL());
     }
 }
