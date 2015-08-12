@@ -15,6 +15,7 @@ public class whiteBoard extends JFrame {
 //This is for Kadir
     //asdasdas
 
+    //TEsting part 2 from Alan
 
     //asdasdasd
     //Testing intellij(Alan)
