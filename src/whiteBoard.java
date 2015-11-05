@@ -108,3 +108,4 @@ public class whiteBoard extends JFrame {
 }
 
 //testing git
+//testing from computer(alan)
