@@ -106,3 +106,5 @@ public class whiteBoard extends JFrame {
         object.addMouseListener(new AL());
     }
 }
+
+//testing git
